@@ -1,0 +1,13 @@
+server:
+  error:
+    include-stacktrace: on_param
+
+# Conexão com o banco de dados
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/anime?useSSL=false&createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
